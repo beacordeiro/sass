@@ -1,0 +1,34 @@
+@mixin cuerpo {
+  margin: 0.9vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@mixin container($ancho, $alto, $color) {
+  @include cuerpo;
+  width: $ancho;
+  height: $alto;
+  background-color: $color;
+}
+
+@mixin tabla {
+  border: 2px solid rgb(65, 27, 27);
+}
+
+@mixin myLI($color, $color-hover) {
+  @for $i from 1 through 3 {
+    .li-#{$i} {
+      a {
+        color: lighten($color, $i * 5%);
+        line-height: 0.8em * $i;
+        font-size: 0.5rem * $i;
+        &:focus,
+        &:hover {
+          color: #{$color-hover};
+        }
+      }
+    }
+  }
+}

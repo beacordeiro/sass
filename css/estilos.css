@@ -1,0 +1,416 @@
+@font-face {
+  font-family: "Droid-Sans-Mono";
+  src: url("../fuentes/Droid-Sans-Mono.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cultive-Mono";
+  src: url("../fuentes/Cultive-Mono.woff2") format("woff2");
+}
+
+.main > h2, .caja1 h1, .caja1 h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+nav {
+  padding: 10px;
+  background-color: #1c2f2f;
+}
+
+nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li:nth-child(1) > a {
+  color: #e01f1f;
+  font-size: 1rem;
+}
+
+nav > ul > li:not(:first-child) a::before {
+  content: "|";
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li:nth-child(2) > a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav > ul > li:not(:first-child) a::before {
+  content: "|";
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+nav > ul > li:nth-child(3) > a {
+  color: blue;
+  font-size: 2rem;
+}
+
+nav > ul > li:not(:first-child) a::before {
+  content: "|";
+}
+
+body {
+  font: 0.8rem "Droid-Sans-Mono", serif;
+  background-color: darkslategrey;
+}
+
+.contenedor {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+#menu {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+header .logo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+}
+
+#wrapper {
+  max-width: 50%;
+  margin: 0 25%;
+}
+
+.contenido {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70vh;
+  background-color: #bcf3d3;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  height: 80%;
+  background-color: #f191e9;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(243, 237, 237, 0.952);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario input {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.formulario input[type=submit] {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border: 1px solid #0fb684;
+  color: #db8e1b;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #4fb560;
+  color: white;
+}
+
+.formulario textarea {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  height: 20%;
+}
+
+.main > h2 {
+  color: #80a4b7;
+}
+
+aside {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: 80%;
+  background-color: #bdc9e9;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mensaje, .caja2 h1 {
+  border: 4px solid #7e0606;
+}
+
+.texto, .caja2 h1 {
+  font: 1.4rem bold "Cultive-Mono", sans-serif;
+}
+
+.caja, .caja1, .caja2 {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.caja1 {
+  height: 55%;
+  background-color: #0e6e16;
+}
+
+.caja1 h1 {
+  color: #75a250;
+}
+
+.caja1 h3 {
+  color: #ccac82;
+}
+
+.caja1 .li-1 a {
+  color: #e59a2b;
+  line-height: 0.8em;
+  font-size: 0.5rem;
+}
+
+.caja1 .li-1 a:focus, .caja1 .li-1 a:hover {
+  color: #0fb684;
+}
+
+.caja1 .li-2 a {
+  color: #e8a541;
+  line-height: 1.6em;
+  font-size: 1rem;
+}
+
+.caja1 .li-2 a:focus, .caja1 .li-2 a:hover {
+  color: #0fb684;
+}
+
+.caja1 .li-3 a {
+  color: #eab058;
+  line-height: 2.4em;
+  font-size: 1.5rem;
+}
+
+.caja1 .li-3 a:focus, .caja1 .li-3 a:hover {
+  color: #0fb684;
+}
+
+.caja2 {
+  height: 35%;
+  background-color: #0e6e16;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caja2 table tr th,
+.caja2 table tr td {
+  border: 2px solid #411b1b;
+}
+
+footer {
+  margin: 0.9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 10vh;
+}
+
+footer div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+footer div:nth-child(1) {
+  background-color: blue;
+  color: white;
+}
+
+footer div:nth-child(1) h1 {
+  font-size: 10px;
+}
+
+footer div:nth-child(2) {
+  background-color: green;
+  color: #dcdf2c;
+}
+
+footer div:nth-child(2) h1 {
+  font-size: 20px;
+}
+
+footer div:nth-child(3) {
+  background-color: orange;
+  color: #0d3468;
+}
+
+footer div:nth-child(3) h1 {
+  font-size: 30px;
+}
+
+footer div:nth-child(4) {
+  background-color: red;
+  color: #0c0b0b;
+}
+
+footer div:nth-child(4) h1 {
+  font-size: 40px;
+}
+/*# sourceMappingURL=estilos.css.map */

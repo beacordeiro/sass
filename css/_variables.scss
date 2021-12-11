@@ -1,0 +1,24 @@
+$body-bg: darkslategrey;
+$color-contenido :rgb(188, 243, 211);
+$color-main: rgb(241, 145, 233);
+$color-aside:rgb(189, 201, 233);
+$color-formulario:rgba(243, 237, 237, 0.952);
+$colors-footer: (1:green, 2:blue, 3:red, 4:orange);
+$colors-footer1: (1:blue,2:green,3:orange, 4:red, );
+$color-1:rgb(219, 142, 27);
+$color-2:rgb(15, 182, 132);
+$color-submit:#4fb560;
+$size:50px;
+$ancho-footer:100%;
+$alto-footer:10vh;
+%cabeceras {
+    //herencia para las cabeceras
+    $font-family: 'Courier New', Courier, monospace;
+    //Declaracion de variables locales
+    $size: 2em;
+    $style: italic;
+    font-family: $font-family;
+    font-size: $size;
+    font-style: $style;
+    text-align: center;
+}

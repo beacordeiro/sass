@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Droid-Sans-Mono";
+    src: url("../fuentes/Droid-Sans-Mono.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Cultive-Mono";
+    src: url("../fuentes/Cultive-Mono.woff2") format("woff2");
+}
+
+$font: 0.8rem "Droid-Sans-Mono", serif;
+$font-secondary: 1.4rem bold "Cultive-Mono", sans-serif;

@@ -1,0 +1,22 @@
+@function aclararColor($color) {
+  @return lighten($color, 10%);
+}
+
+@function complementarColor($color) {
+  $colortexto: complement($color);
+  @return colortexto;
+}
+
+@function colorComplementario($color) {
+  @return invert($color);
+}
+
+@function set-color($class) {
+  @if ($class==green) {
+    @return #dcdf2c;
+  } @else if ($class==blue) {
+    @return white;
+  } @else if ($class==red) {
+    @return rgb(12, 11, 11);
+  } @else { @return rgb(13, 52, 104) };
+}

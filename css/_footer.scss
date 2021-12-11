@@ -1,0 +1,19 @@
+footer {
+    @include cuerpo;
+    width: $ancho-footer;
+    height: $alto-footer;
+    & div {
+        flex: 1;
+        text-align: center;
+        @each $i,
+        $color in $colors-footer1 {
+            &:nth-child(#{$i}) {
+                background-color: $color;
+                color: set-color($color);
+                h1 {
+                    font-size: ($i)*10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$padding: 10px;
+$colors: (1: rgb(224, 31, 31), 2: white, 3: blue);
+nav {
+    padding: $padding;
+    background-color: darken($body-bg, 10%);
+    &>ul {
+        display: flex;
+        justify-content: flex-end;
+        @each $index,
+        $link-color in $colors {
+            &>li {
+                list-style: none;
+                //INTERPOLACION: Devuelve una cadena sin comillas
+                &:nth-child(#{$index})>a {
+                    color: $link-color;
+                    font-size: 1rem + (($index - 1) / 2);
+                }
+                &:not(:first-child) a::before {
+                    content: "|";
+                }
+            }
+        }
+    }
+}
